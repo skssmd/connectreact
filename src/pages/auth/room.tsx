@@ -137,7 +137,12 @@ const Room: React.FC = () => {
         }
       }
 
-
+      await axios.post(`${apiUrl}/messages/send/${room_id}`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+          Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+        },
+      });
       setNewMessage("");
       setFileInput(null);
       if (fileInputRef.current) {
