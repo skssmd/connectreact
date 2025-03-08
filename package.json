@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview --port $PORT"
+    "preview": "vite preview --port $PORT --host https://conn-6sq5.onrender.com"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
