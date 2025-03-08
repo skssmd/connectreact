@@ -1,0 +1,90 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@import "tailwindcss";
+/* Remove default focus styles for all inputs, textareas, and selects */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0.5px solid rgb(129, 129, 129);
+}
+
+input{
+  border:0.2px solid rgb(85, 85, 85);
+}
+/* button:disabled{
+  background-color:  ;
+} */
+input.custom-input:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0.2px solid rgb(184, 184, 184);
+}
+
+/* You can also override other styles for this input class if needed */
+input.custom-input {
+  border: 0.2px solid rgb(223, 223, 223);
+}
+.ash{
+  background-color: #ececec;
+}
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1e293b; /* Dark track color */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #64748b; /* Light gray thumb */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8; /* Lighter on hover */
+}
+/* Default scrollbar hidden */
+::-webkit-scrollbar {
+  width: 8px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Transparent track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Semi-transparent thumb */
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.5); /* Less transparent thumb */
+  border-radius: 10px;
+}
+
+/* Show scrollbar when scrolling */
+body:hover ::-webkit-scrollbar,
+body:active ::-webkit-scrollbar {
+  opacity: 1;
+}
+
+/* Make thumb more visible on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.8);
+}

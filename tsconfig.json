@@ -1,0 +1,18 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "target": "es5", // or "es6" based on your project requirements
+    "module": "commonjs", // or "esnext" if using ES modules
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false
+  }
+}
